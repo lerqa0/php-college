@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+img {
+    width: 300px;
+    height: 450px;
+}
+
+.cards {
+    display: flex;
+}
