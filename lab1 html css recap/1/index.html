@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="sort">
+        <label for="categories">Sortează:</label>
+        <select class="select" id="categories">
+            <option value="all" selected>Toate</option>
+            <option value="bestseller">Bestseller</option>
+        </select>
+    </div>
+    <div class="interests">
+        <span>Te-ar putea interesa:</span>
+        <a href="#" class="link">Noutati</a>
+        <a href="#" class="link link-active">Bestseller</a>
+        <a href="#" class="link">Cele mai votate</a>
+    </div>
+</header>
+<main>
+    <div class="cards">
+        <div class="card">
+            <div class="img">
+                <img src="./img/book1.jpg" alt="book1">
+            </div>
+            <span class="author">John Gray</span>
+            <span class="book-title">Barbatii sunt de pe Marte, Femeile sunt de pe Venus</span>
+            <div class="bottom">
+                <div class="review-section" id="review1">
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                </div>
+                <div class="price">
+                    <span class="new-price">105,71 lei</span>
+                    <span class="old-price">(120,52 lei)</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="./img/book2.jpg" alt="book2">
+            </div>
+            <span class="author">Mike Robbins</span>
+            <span class="book-title">Nimic nu se schimba pana cand tu nu te schimbi. Un ghid pentru autocompasiune si puterea de a-ti</span>
+            <div class="bottom">
+                <div class="review-section" id="review2">
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                </div>
+                <div class="price">
+                    <span class="new-price">97,56 lei</span>
+                    <span class="old-price">(140,14 lei)</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="./img/book3.webp" alt="book3">
+            </div>
+            <span class="author">Brian Tracy</span>
+            <span class="book-title">Incepe cu ce nu-ti place. Editia a III-a</span>
+            <div class="bottom">
+                <div class="review-section" id="review3">
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                    <svg class="star" viewBox="0 0 24 24">
+                        <polygon points="12,2 15,10 23,10 17,14 19,22 12,17 5,22 7,14 1,10 9,10"></polygon>
+                    </svg>
+                </div>
+                <div class="price">
+                    <span class="new-price">85,19 lei</span>
+                    <span class="old-price">(96,45 lei)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

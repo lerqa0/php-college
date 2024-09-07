@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: calc(100% - 160px);
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    margin: 20px 0;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(180, 179, 179, 0.55);
+}
+
+.select {
+    margin-left: 10px;
+    padding: 7px;
+    outline: none;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+.interests {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    color: gray;
+}
+
+.link {
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.link-active {
+    border-bottom: 4px solid #da7e0e;
+    color: black;
+    font-weight: bold;
+}
+/* END HEADER */
+
+/* MAIN */
+img {
+    width: 350px;
+    height: 550px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    box-shadow: rgba(126, 126, 126, 0.2) 0 2px 8px 0;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px 20px 30px;
+}
+
+.img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.author {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.book-title {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.review-section {
+    margin-bottom: 5px;
+    margin-left: -3px;
+}
+
+.rating {
+    display: flex;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+    fill: #ddd;
+    cursor: pointer;
+    transition: fill 0.2s;
+}
+
+.star.hovered,
+.star.active {
+    fill: #ffc107;
+}
