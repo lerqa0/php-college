@@ -37,6 +37,7 @@ header {
 .link {
     text-decoration: none;
     padding-bottom: 10px;
+    color: gray;
 }
 
 .link-active {
@@ -44,6 +45,7 @@ header {
     color: black;
     font-weight: bold;
 }
+
 /* END HEADER */
 
 /* MAIN */
@@ -58,18 +60,24 @@ img {
 }
 
 .card {
+    position: relative;
     box-shadow: rgba(126, 126, 126, 0.2) 0 2px 8px 0;
-    width: 25%;
+    width: 26%;
     display: flex;
     flex-direction: column;
     padding: 10px 30px 20px 30px;
+}
+
+.card:hover {
+    box-shadow: rgba(80, 76, 76, 0.49) 0 2px 8px 0;
+    cursor: pointer;
 }
 
 .img {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .author {
@@ -95,7 +103,8 @@ img {
 .star {
     width: 30px;
     height: 30px;
-    fill: #ddd;
+    fill: #e5e4e4;
+    stroke: #ffc107;
     cursor: pointer;
     transition: fill 0.2s;
 }
@@ -103,4 +112,48 @@ img {
 .star.hovered,
 .star.active {
     fill: #ffc107;
+}
+
+.bottom {
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.price {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+}
+
+.old-price {
+    font-size: 20px;
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    font-weight: 500;
+    color: gray;
+}
+
+.new-price {
+    color: #da7e0e;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.discount {
+    width: 120px;
+    background-color: red;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin-left: 350px;
+    margin-top: 80px;
+}
+
+.sale-text {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
 }
