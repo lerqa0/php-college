@@ -2,44 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>car store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile Listing</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
 <header>
     <h1>Automobilele</h1>
-    <button class="button">Toate automobilele</button>
+    <button>TOATE AUTOMOBILELE</button>
 </header>
-<main>
+
+<div class="container">
     <div class="filter">
         <h2><span class="bold">Cauta</span> automobilul</h2>
-        <label for="mark">Marca</label>
-        <select name="" id="mark" class="marca">
-            <option value="mercedes-benz" selected>Mercedes-Benz</option>
-            <option value="audi">Audi</option>
-            <option value="bmw">BMW</option>
-        </select>
-        <label for="model">Model</label>
-        <select name="" id="model" class="model">
-            <option value="cls" selected>CLS</option>
-            <option value="rs7">RS7</option>
-            <option value="m4">M4</option>
-        </select>
-        <label for="year">Anul</label>
-        <div class="years">
-            <select name="" id="year" class="an">
-                <option selected>Din</option>
-                <option value="2010" >2010</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
+        <form>
+            <label for="marca">Marca:</label>
+            <select id="marca">
+                <option value="Audi">Audi</option>
+                <option value="Audi">Mercedes</option>
+                <option value="Audi">BMW</option>
             </select>
-            <select name="" id="year2" class="an">
-                <option selected>Pina in</option>
-                <option value="2012">2012</option>
-                <option value="2017">2017</option>
-                <option value="2024">2024</option>
+
+            <label for="model">Model:</label>
+            <select id="model">
+                <option value="RS7">RS7</option>
+                <option value="RS7">CLS</option>
+                <option value="RS7">M4</option>
             </select>
-        </div>
+
+            <label for="anul-from">Anul din:</label>
+            <div class="selects">
+                <input type="date" name="from" id="anul-from">
+                <input type="date" id="anul-to">
+            </div>
+
+            <label for="pret">Pret:</label>
+            <div class="selects">
+                <input type="text" id="pret" placeholder="De la">
+                <input type="text" id="pret_to" placeholder="Pina la">
+            </div>
+
+            <label for="km">KM:</label>
+            <div class="selects">
+                <input type="text" id="km" placeholder="De la">
+                <input type="text" id="km_to" placeholder="Pina la">
+            </div>
+
+            <button type="submit">CAUTA</button>
+        </form>
     </div>
-</main>
+
+    <section class="car-list">
+        <div class="car-item">
+            <img src="./img/cls.jpg" alt="Mercedes-Benz CLS">
+            <div class="details">
+                <a href="#">Mercedes-Benz CLS</a>
+                <p class="price">55 500$</p>
+                <p class="car-details">Anul 2012 | 5.5 Benzin | 557 HP | Grand Coupe | 75 650 KM</p>
+                <a href="#" class="details-link">Vezi detalii &raquo;</a>
+            </div>
+        </div>
+
+        <div class="car-item">
+            <img src="./img/rs7.jpg" alt="Audi RS7">
+            <div class="details">
+                <a href="#">Audi RS7</a>
+                <p class="price">134 000$</p>
+                <p class="car-details">Anul 2018 | 4.0 Benzin | 725 HP | Grand Coupe | 437 KM</p>
+                <a href="#" class="details-link">Vezi detalii &raquo;</a>
+            </div>
+        </div>
+
+        <div class="car-item">
+            <img src="./img/m4.jpg" alt="BMW M4">
+            <div class="details">
+                <a href="#">BMW M4</a>
+                <p class="price">72 500$</p>
+                <p class="car-details">Anul 2017 | 3.0 Benzin | 450 HP | Coupe | 10 000 KM</p>
+                <a href="#" class="details-link">Vezi detalii &raquo;</a>
+            </div>
+        </div>
+    </section>
+</div>
+
 </body>
 </html>

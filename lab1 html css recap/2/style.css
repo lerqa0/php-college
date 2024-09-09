@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b4b3b3;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.container {
+    display: flex;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.filter {
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.filter h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.filter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.filter select,
+.filter input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.filter button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter button:hover {
+    background-color: #555;
+}
+
+.car-list {
+    width: 75%;
+    padding-left: 20px;
+}
+
+.car-item {
+    background-color: #fff;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.car-item img {
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.details {
+    flex: 1;
+}
+
+.details h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.details-link {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.details-link:hover {
+    text-decoration: underline;
+}
+
+.selects {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+.car-details {
+    padding: 10px 20px;
+    background-color: #eaeaea;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #f39e03;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ffc250;
+    cursor: pointer;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
