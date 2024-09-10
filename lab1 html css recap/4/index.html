@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form class="pizza-form">
+    <h2>Livrare Pizza</h2>
+
+    <div class="row">
+        <label for="name">Numele Dvs.</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="row">
+        <label for="phone">Numarul Dvs.</label>
+        <input type="text" id="phone" name="phone" required>
+    </div>
+
+    <div class="row">
+        <label>Alegeti pizza:</label>
+
+        <div class="checkbox-group">
+            <div class="form-group">
+                <input type="checkbox" id="peperoni" name="pizza" value="Peperoni">
+                <label for="peperoni">Peperoni</label>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="vegetarian" name="pizza" value="Vegetarian">
+                <label for="vegetarian">Vegetarian</label>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="rancho" name="pizza" value="Rancho">
+                <label for="rancho">Rancho</label>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <label for="sauce">Sos pentru pizza</label>
+        <select id="sauce" name="sauce">
+            <option value="secret">Secret Sauce</option>
+            <option value="marinara">Marinara</option>
+            <option value="alfredo">Alfredo</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <label>Adaos adaugator:</label>
+        <div class="checkbox-group">
+            <div class="form-group">
+                <input type="checkbox" id="extra-cheese" name="extra" value="Extra Cheese">
+                <label for="extra-cheese">Extra Cheese</label>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="gluten-free" name="extra" value="Gluten Free Base">
+                <label for="gluten-free">Gluten Free Base</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <label for="instructions">Instructii pentru livrare</label>
+        <textarea id="instructions" name="instructions" rows="4"></textarea>
+    </div>
+
+    <button type="submit">TRIMITE Comanda</button>
+</form>
+</body>
+</html>

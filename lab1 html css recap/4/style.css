@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+label {
+    text-wrap: nowrap;
+}
+
+.pizza-form {
+    background-color: #66FF99; /* Light green */
+    padding: 30px;
+    border: 1px solid #ddd;
+    width: 500px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pizza-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pizza-form input[type="text"],
+.pizza-form textarea,
+.pizza-form select {
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.pizza-form .checkbox-group {
+    margin-left: 120px;
+    margin-bottom: 10px;
+}
+
+.pizza-form .checkbox-group input {
+    margin-right: 10px;
+}
+
+.pizza-form textarea {
+    resize: none;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pizza-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    color: black;
+    border: 1px solid #333;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.pizza-form button:hover {
+    background-color: #e0e0e0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
